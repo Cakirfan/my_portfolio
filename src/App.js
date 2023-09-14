@@ -2,6 +2,7 @@ import "./App.css";
 // import AppRouter from "./router/AppRouter";
 import Navbar from "./components/navbar/Navbar";
 import Home from "./components/home/Home";
+import About from "./components/aboutMe/About";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
 
       <main>
         <Home />
+        <About/>
       </main>
     </div>
   );

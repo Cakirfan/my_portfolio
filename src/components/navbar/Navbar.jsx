@@ -30,28 +30,16 @@ const Navbar = () => {
           <h1>Irfan Cakir</h1>
 
           <div className="social-icons">
-            <a
-              href="https://de-de.facebook.com/"
-              target="_blank"
-              rel="noreferrer"
-            >
+            <a href="https://de-de.facebook.com/" target="_blank" rel="noreferrer">
               <BsFacebook />
             </a>
-            <a
-              href="https://www.instagram.com/"
-              target="_blank"
-              rel="noreferrer"
-            >
+            <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">
               <BsInstagram />
             </a>
             <a href="https://twitter.com/" target="_blank" rel="noreferrer">
               <BsTwitter />
             </a>
-            <a
-              href="https://www.linkedin.com/in/irfan-cakir-/"
-              target="_blank"
-              rel="noreferrer"
-            >
+            <a href="https://www.linkedin.com/in/irfan-cakir-/" target="_blank" rel="noreferrer">
               <BsLinkedin />
             </a>
           </div>
@@ -61,47 +49,31 @@ const Navbar = () => {
         <nav>
           <ul>
             <li>
-              <a href="#" className="active a">
-                <BsFillHouseDoorFill className="navbar-icon" /> Home
-              </a>
+              <a href="#" className="active a"><BsFillHouseDoorFill className="navbar-icon" /> Home</a>
             </li>
             <li>
-              <a href="about" className="a">
-                <FaUser className="navbar-icon" /> About Me
-              </a>
+              <a href="#about" className="a"><FaUser className="navbar-icon" /> About Me</a>
             </li>
             <li>
-              <a href="portfolio" className="a">
-                <BsFillBriefcaseFill className="navbar-icon" /> Portfolio
-              </a>
+              <a href="portfolio" className="a"><BsFillBriefcaseFill className="navbar-icon" /> Portfolio</a>
             </li>
             <li>
-              <a href="services" className="a">
-                <BsServer className="navbar-icon" /> Services
-              </a>
+              <a href="services" className="a"><BsServer className="navbar-icon" /> Services</a>
             </li>
             <li>
-              <a href="contact" className="a">
-                <BsFillEnvelopeFill className="navbar-icon" /> Contact
-              </a>
+              <a href="contact" className="a"><BsFillEnvelopeFill className="navbar-icon" /> Contact</a>
             </li>
           </ul>
         </nav>
 
         {/* <!--* Footer --> */}
-        <div className="footer">
+        <footer className="footer">
           <p>
             &copy; Copyright 2023 <br />
             Designed By
-            <a
-              href="https://www.linkedin.com/in/irfan-cakir-/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Cakirfan
-            </a>
+            <a href="https://www.linkedin.com/in/irfan-cakir-/" target="_blank" rel="noreferrer">Cakirfan</a>
           </p>
-        </div>
+        </footer>
       </header>
 
       {/* <!--* Mobile Nav Toggle --> */}
