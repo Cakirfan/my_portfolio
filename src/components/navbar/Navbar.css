@@ -1,0 +1,138 @@
+header {
+  height: 100vh;
+  width: 300px;
+  padding: 15px 30px;
+  background-color: var(--sideBGColor);
+  overflow-y: auto;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  transition: 0.4s;
+  z-index: 99;
+}
+
+header .profile {
+  text-align: center;
+  margin: 10px 0;
+}
+
+header {
+  box-shadow: 3px 10px 15px white inset;
+}
+
+header .profile h1 {
+  color: #fff!important;
+}
+
+header .profile .social-icons a {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  align-items: center;
+  line-height: 37px;
+  background-color: var(--iconBGColor);
+  color: #fff;
+  font-size: 18px;
+  margin: .3rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  transition: 0.4s;
+}
+
+header .profile .social-icons a:hover {
+  background-color: var(--themeColor);
+  transform: scale(1.2);
+}
+
+/** Navbar */
+header nav {
+  margin-top: 30px;
+}
+
+header nav ul li {
+  list-style: none;
+}
+
+header nav ul li a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 7px 10px;
+  margin: 5px 0;
+  color: lightgray;
+  font-weight: 400;
+  font-size: 19px;
+  letter-spacing: 0.6px;
+  cursor: pointer;
+}
+
+header nav ul li .a .navbar-icon {
+  margin-right: 10px;
+  font-size: 20px;
+  transition: 0.4s;
+}
+
+header nav ul li .a:hover .navbar-icon {
+  color: var(--themeColor);
+  margin-right: 1rem;
+}
+
+header nav ul li .active .navbar-icon {
+  color: var(--themeColor);
+}
+
+/** Footer */
+header .footer {
+  text-align: center;
+  background-color: var(--sideBGColor);
+  width: 300px;
+  color: lightgray;
+  font-size: 14px;
+  letter-spacing: 0.6px;
+  padding: 15px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  transition: 0.4s;
+  box-shadow: 3px 5px 11px white inset;
+}
+
+header .footer p a {
+  color: var(--themeColor);
+}
+
+/** Mobile Nav Toggle */
+#MenuBtn {
+  position: fixed;
+  top: 25px;
+  right: 25px;
+  font-size: 20px;
+  width: 50px;
+  height: 50px;
+  padding: .7rem;
+  color: #fff;
+  background-color: var(--themeColor);
+  text-align: center;
+  line-height: 42px;
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 20%);
+  display: none;
+  z-index: 999;
+}
+
+/*! Mobile View */
+@media only screen and (max-width: 1050px) {
+  header,
+  header .footer {
+    left: -300px;
+  }
+  #MenuBtn {
+    display: block;
+  }
+}
+
+/** Header Toggle */
+.mobile-nav-active header,
+.mobile-nav-active .footer {
+  left: 0;
+}
