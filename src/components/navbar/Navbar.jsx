@@ -55,13 +55,13 @@ const Navbar = () => {
               <a href="#about" className="a"><FaUser className="navbar-icon" /> About Me</a>
             </li>
             <li>
-              <a href="portfolio" className="a"><BsFillBriefcaseFill className="navbar-icon" /> Portfolio</a>
+              <a href="#portfolio" className="a"><BsFillBriefcaseFill className="navbar-icon" /> Portfolio</a>
             </li>
             <li>
-              <a href="services" className="a"><BsServer className="navbar-icon" /> Services</a>
+              <a href="#services" className="a"><BsServer className="navbar-icon" /> Services</a>
             </li>
             <li>
-              <a href="contact" className="a"><BsFillEnvelopeFill className="navbar-icon" /> Contact</a>
+              <a href="#contact" className="a"><BsFillEnvelopeFill className="navbar-icon" /> Contact</a>
             </li>
           </ul>
         </nav>
