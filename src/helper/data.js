@@ -88,3 +88,37 @@ export const portWorks = [
     wDesc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error, in?",
   },
 ];
+
+
+export const services = [
+  {
+    sId: 1,
+    sName: "Service-1",
+    sDesc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error, in?",
+  },
+  {
+    sId: 2,
+    sName: "Service-2",
+    sDesc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error, in?",
+  },
+  {
+    sId: 3,
+    sName: "Service-3",
+    sDesc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error, in?",
+  },
+  {
+    sId: 4,
+    sName: "Service-4",
+    sDesc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error, in?",
+  },
+  {
+    sId: 5,
+    sName: "Service-5",
+    sDesc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error, in?",
+  },
+  {
+    sId: 6,
+    sName: "Service-6",
+    sDesc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error, in?",
+  },
+];
