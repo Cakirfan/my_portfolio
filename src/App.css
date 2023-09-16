@@ -24,6 +24,10 @@ main {
   margin-left: 300px;
   background-color: var(--bgColor);
   transition: 0.3s;
+  position: relative;
+}
+.container {
+  position: relative;
 }
 @media only screen and (max-width: 1050px) {
   main {
