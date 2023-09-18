@@ -30,6 +30,10 @@
   transform: scale(1.2);
 }
 
+#portfolio .btn-group .hide {
+  display: none;
+}
+
 #portfolio .port-row {
   margin-top: 50px;
   display: grid;

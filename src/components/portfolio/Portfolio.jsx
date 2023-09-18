@@ -1,42 +1,84 @@
-import "./Portfolio.css"
+import React, { useState } from "react";
 import { FaUpRightFromSquare } from "react-icons/fa6";
-import { portWorks } from "../../helper/data"
+import { portWorks } from "../../helper/data";
+import "./Portfolio.css";
 
-const Portfolio = ()=> {
-    return (
-      <section id="portfolio">
-        <h1 className="sub-heading">Portfolio</h1>
-        <div className="divider"></div>
-        <p className="sub-paraf">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis quo
-          similique qui distinctio quae facere harum doloribus mollitia sed
-          nihil?
-        </p>
+const Portfolio = () => {
+    
+  const [activeButton, setActiveButton] = useState("all");
+  const [filteredWorks, setFilteredWorks] = useState(portWorks);
 
-        <div className="btn-group">
-          <button className="active">all</button>
-          <button>easy</button>
-          <button>intermediate level</button>
-          <button>high level</button>
-        </div>
-        <div className="port-row">
-          {portWorks.map((work) => (
-            <div className="port-item" key={work.wId}>
-              <div className="port-img">
-                <img src={work.wImage} alt={work.wName} />
-              </div>
-              <div className="port-info">
-                <h4>{work.wName}</h4>
-                <p>{work.wDesc}</p>
-                <a href="#">
-                  <FaUpRightFromSquare />
-                </a>
-              </div>
+  const handleButtonClick = (btn) => {
+    setActiveButton(btn);
+
+    // Tıklanan düğmeye göre portfolyo öğelerini filtrele
+    if (btn === "all") {
+      setFilteredWorks(portWorks);
+    } else {
+      const filtered = portWorks.filter((work) => work.wCategory === btn);
+      setFilteredWorks(filtered);
+    }
+  };
+
+  
+
+  return (
+    <section id="portfolio">
+      <h1 className="sub-heading">Portfolio</h1>
+      <div className="divider"></div>
+      <p className="sub-paraf">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis quo
+        similique qui distinctio quae facere harum doloribus mollitia sed nihil?
+      </p>
+
+      <div className="btn-group">
+        <button
+          className={activeButton === "all" ? "active" : ""}
+          data-name="all"
+          onClick={() => handleButtonClick("all")}
+        >
+          all
+        </button>
+        <button
+          className={activeButton === "easy" ? "active" : ""}
+          data-name="easy"
+          onClick={() => handleButtonClick("easy")}
+        >
+          easy
+        </button>
+        <button
+          className={activeButton === "intermediate" ? "active" : ""}
+          data-name="intermediate"
+          onClick={() => handleButtonClick("intermediate")}
+        >
+          intermediate level
+        </button>
+        <button
+          className={activeButton === "high" ? "active" : ""}
+          data-name="high"
+          onClick={() => handleButtonClick("high")}
+        >
+          high level
+        </button>
+      </div>
+      <div className="port-row">
+        {filteredWorks.map((work) => (
+          <div className="port-item" key={work.wId} data-name={work.wCategory}>
+            <div className="port-img">
+              <img src={work.wImage} alt={work.wName} />
             </div>
-          ))}
-        </div>
-      </section>
-    );
-}
+            <div className="port-info">
+              <h4>{work.wName}</h4>
+              <p>{work.wDesc}</p>
+              <a href="#">
+                <FaUpRightFromSquare />
+              </a>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+};
 
 export default Portfolio;
