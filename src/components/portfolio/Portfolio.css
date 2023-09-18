@@ -2,6 +2,34 @@
   padding: 70px 30px;
 }
 
+#portfolio .btn-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+#portfolio .btn-group .active {
+  background-color: var(--bgColor2);
+}
+
+#portfolio .btn-group button {
+  font-size: 1rem;
+  text-transform: capitalize;
+  padding: 0.5rem 1.5rem;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--themeColor);
+  color: #fff;
+  transition: all 0.5s ease;
+}
+
+#portfolio .btn-group button:hover {
+  background-color: var(--bgColor2);
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
 #portfolio .port-row {
   margin-top: 50px;
   display: grid;
