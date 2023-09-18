@@ -1,5 +1,6 @@
 import "./Services.css";
 import { services } from "../../helper/data";
+import { HiBriefcase } from "react-icons/hi";
 
 const Services = () => {
   return (
@@ -16,7 +17,7 @@ const Services = () => {
         {services.map((service) => (
           <div className="service-box" key={service.id}>
             <div className="icon">
-              <i className="fa-solid fa-briefcase"></i>
+              <HiBriefcase className="icon-item" />
             </div>
             <div className="user-info">
               <h4>{service.sName}</h4>

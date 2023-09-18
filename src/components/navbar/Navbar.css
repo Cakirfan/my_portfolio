@@ -51,13 +51,20 @@ header .profile h1 {
   color: #fff !important;
 }
 
+header .profile .social-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 header .profile .social-icons a {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 37px;
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  align-items: center;
-  line-height: 37px;
   background-color: var(--iconBGColor);
   color: #fff;
   font-size: 18px;
@@ -69,6 +76,7 @@ header .profile .social-icons a {
 
 header .profile .social-icons a:hover {
   background-color: var(--themeColor);
+  border: .1rem solid #fff;
   transform: scale(1.2);
 }
 
