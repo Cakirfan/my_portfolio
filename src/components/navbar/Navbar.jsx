@@ -74,7 +74,7 @@ const Navbar = () => {
       <header>
         <div className="profile">
           <MyLogo />
-          <h1>Irfan Cakir</h1>
+          <h1 className="header-h1">Irfan Cakir</h1>
 
           <div className="social-icons">
           {
