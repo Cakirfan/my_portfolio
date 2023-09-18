@@ -34,7 +34,8 @@
   border: 2px solid var(--themeColor);
   text-align: center;
   line-height: 47px;
-  font-size: 20px!important;
+  font-size: 20px;
+  padding: 9px;
   color: var(--themeColor);
   transition: 0.5s;
 }

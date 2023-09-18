@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import MyLogo from "../myLogo/MyLogo";
-import "./Navbar.css"
+import "./Navbar.css";
 // import { Link } from 'react-router-dom'
 import {
   BsFacebook,
@@ -21,6 +21,53 @@ const Navbar = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const navbarItems = [
+    {
+      title: " Home",
+      href: "#",
+      icon: <BsFillHouseDoorFill className="navbar-icon" />,
+    },
+    {
+      title: " About Me",
+      href: "#about",
+      icon: <FaUser className="navbar-icon" />,
+    },
+    {
+      title: " Portfolio",
+      href: "#portfolio",
+      icon: <BsFillBriefcaseFill className="navbar-icon" />,
+    },
+    {
+      title: " Services",
+      href: "#services",
+      icon: <BsServer className="navbar-icon" />,
+    },
+    {
+      title: " Contact",
+      href: "#contact",
+      icon: <BsFillEnvelopeFill className="navbar-icon" />,
+    },
+  ];
+
+    const socialIcons = [
+      {
+        href: "https://de-de.facebook.com/",
+        icon: <BsFacebook />,
+      },
+      {
+        href: "https://www.instagram.com/",
+        icon: <BsInstagram />,
+      },
+      {
+        href: "https://twitter.com/",
+        icon: <BsTwitter />,
+      },
+      {
+        href: "https://www.linkedin.com/in/irfan-cakir-/",
+        icon: <BsLinkedin />,
+      },
+    ];
+
 
   return (
     <div className={isMenuOpen ? "mobile-nav-active" : ""}>
@@ -30,39 +77,25 @@ const Navbar = () => {
           <h1>Irfan Cakir</h1>
 
           <div className="social-icons">
-            <a href="https://de-de.facebook.com/" target="_blank" rel="noreferrer">
-              <BsFacebook />
-            </a>
-            <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">
-              <BsInstagram />
-            </a>
-            <a href="https://twitter.com/" target="_blank" rel="noreferrer">
-              <BsTwitter />
-            </a>
-            <a href="https://www.linkedin.com/in/irfan-cakir-/" target="_blank" rel="noreferrer">
-              <BsLinkedin />
-            </a>
+          {
+            socialIcons.map((icons) => (
+            <a href={icons.href} target="_blank" rel="noreferrer" style={{ cursor: "pointer" }}>{icons.icon}</a>              
+            ))
+          }
           </div>
         </div>
 
         {/* <!--* Navbar --> */}
         <nav>
           <ul>
-            <li>
-              <a href="#" className="active a"><BsFillHouseDoorFill className="navbar-icon" /> Home</a>
-            </li>
-            <li>
-              <a href="#about" className="a"><FaUser className="navbar-icon" /> About Me</a>
-            </li>
-            <li>
-              <a href="#portfolio" className="a"><BsFillBriefcaseFill className="navbar-icon" /> Portfolio</a>
-            </li>
-            <li>
-              <a href="#services" className="a"><BsServer className="navbar-icon" /> Services</a>
-            </li>
-            <li>
-              <a href="#contact" className="a"><BsFillEnvelopeFill className="navbar-icon" /> Contact</a>
-            </li>
+            {navbarItems.map((item) => (
+              <li>
+                <a href={item.href} className="active a">
+                  {item.icon}
+                  {item.title}
+                </a>
+              </li>
+            ))}
           </ul>
         </nav>
 
@@ -71,7 +104,9 @@ const Navbar = () => {
           <p>
             &copy; Copyright 2023 <br />
             Designed By
-            <a href="https://www.linkedin.com/in/irfan-cakir-/" target="_blank" rel="noreferrer">Cakirfan</a>
+            <a href="https://www.linkedin.com/in/irfan-cakir-/" target="_blank" rel="noreferrer">
+              Cakirfan
+            </a>
           </p>
         </footer>
       </header>
