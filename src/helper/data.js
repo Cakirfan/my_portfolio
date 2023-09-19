@@ -44,9 +44,10 @@ export const portWorks = [
   },
   {
     wId: 2,
-    wName: "WordPress",
-    wCategory: "high",
-    wImage: "https://img.freepik.com/freie-psd/wander-landingpage_23-2148859957.jpg?size=626&ext=jpg&ga=GA1.2.258947574.1676464177&semt=sph",
+    wName: "Freelance-Web-Design",
+    wCategory: "easy",
+    wHref: "https://freelance-web-design.vercel.app/",
+    wImage: "images/Freelance-Web-Design.gif",
     wDesc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error, in?",
   },
   {
