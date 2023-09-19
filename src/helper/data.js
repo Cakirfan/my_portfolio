@@ -52,9 +52,10 @@ export const portWorks = [
   },
   {
     wId: 3,
-    wName: "WordPress",
+    wName: "Horoscope-App",
     wCategory: "intermediate",
-    wImage: "https://img.freepik.com/freie-psd/landingpage-schwimmverein-vorlage_23-2148463354.jpg?size=626&ext=jpg&ga=GA1.2.258947574.1676464177&semt=sph",
+    wHref: "https://horoscope-app-seven.vercel.app/",
+    wImage: "images/Horoscope-App.gif",
     wDesc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error, in?",
   },
   {
