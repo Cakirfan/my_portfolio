@@ -1,7 +1,29 @@
 import "./Contact.css"
-import { FaEnvelope, FaPhoneAlt, FaLocationArrow } from "react-icons/fa";
+import { HiLocationMarker } from "react-icons/hi";
+import { HiEnvelope, HiPhoneArrowDownLeft } from "react-icons/hi2";
 
 const Contact = () => {
+
+  const contactInfo = [
+    {
+      cName: "Email",
+      cInfo: "cakirfan.001@gmail.com",
+      cHref: "https://www.google.de/gmail/about/",
+      cIcon: <HiEnvelope className="sub-icon" />,
+    },
+    {
+      cName: "Call",
+      cInfo: "+49 (123) 456 7890",
+      cHref: "https://web.whatsapp.com/",
+      cIcon: <HiPhoneArrowDownLeft className="sub-icon" />,
+    },
+    {
+      cName: "Location",
+      cInfo: "Düsseldorf, NRW, Deutschland",
+      cHref: "https://goo.gl/maps/Ddpe9oJdrpg7ERWV9",
+      cIcon: <HiLocationMarker className="sub-icon" />,
+    },
+  ];
 
     return (
       <section id="contact">
@@ -20,44 +42,19 @@ const Contact = () => {
         <div className="contact-row">
           {/* <!--* Left Col --> */}
           <div className="contact-left">
-            {/* <!--* EMail Box --> */}
-            <div className="icon-box">
-              <div className="icon">
-                <a href="https://www.google.de/gmail/about/" target="_blank">
-                  <FaEnvelope className="sub-icon" />
-                </a>
+            {contactInfo.map((info) => (
+              <div className="icon-box">
+                <div className="icon">
+                  <a href={info.cHref} target="_blank">
+                    {info.cIcon}
+                  </a>
+                </div>
+                <div className="info">
+                  <h4>{info.cName}:</h4>
+                  <p>{info.cInfo}</p>
+                </div>
               </div>
-              <div className="info">
-                <h4>Email:</h4>
-                <p>cakirfan.001@gmail.com</p>
-              </div>
-            </div>
-
-            {/* <!--* Call Box --> */}
-            <div className="icon-box">
-              <div className="icon">
-                <a href="https://web.whatsapp.com/" target="_blank">
-                  <FaPhoneAlt className="sub-icon" />
-                </a>
-              </div>
-              <div className="info">
-                <h4>Call:</h4>
-                <p>+49 (123) 456 7890</p>
-              </div>
-            </div>
-
-            {/* <!--* Location Box --> */}
-            <div className="icon-box">
-              <div className="icon">
-                <a href="https://goo.gl/maps/Ddpe9oJdrpg7ERWV9" target="_blank">
-                  <FaLocationArrow className="sub-icon" />
-                </a>
-              </div>
-              <div className="info">
-                <h4>Location:</h4>
-                <p>Düsseldorf, NRW, Deutschland</p>
-              </div>
-            </div>
+            ))}
 
             {/* <!--* Map --> */}
 

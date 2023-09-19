@@ -70,7 +70,7 @@ const Portfolio = () => {
             <div className="port-info">
               <h4>{work.wName}</h4>
               <p>{work.wDesc}</p>
-              <a href="#">
+              <a href={work.wHref}>
                 <FaUpRightFromSquare />
               </a>
             </div>

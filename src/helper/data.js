@@ -32,12 +32,14 @@ export const experiences = [
 ];
 
 
+
 export const portWorks = [
   {
     wId: 1,
-    wName: "WordPress",
+    wName: "NBA-Legends",
     wCategory: "easy",
-    wImage: "https://img.freepik.com/freie-psd/outdoor-abenteuer-konzept-landingpage-vorlage_23-2148811830.jpg?size=626&ext=jpg&ga=GA1.1.258947574.1676464177&semt=sph",
+    wHref: "https://nba-legends-three.vercel.app/",
+    wImage: "images/NBA-Legends.gif",
     wDesc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error, in?"
   },
   {
