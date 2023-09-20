@@ -32,34 +32,10 @@ const Portfolio = () => {
       </p>
 
       <div className="btn-group">
-        <button
-          className={activeButton === "all" ? "active" : ""}
-          data-name="all"
-          onClick={() => handleButtonClick("all")}
-        >
-          all
-        </button>
-        <button
-          className={activeButton === "easy" ? "active" : ""}
-          data-name="easy"
-          onClick={() => handleButtonClick("easy")}
-        >
-          easy
-        </button>
-        <button
-          className={activeButton === "intermediate" ? "active" : ""}
-          data-name="intermediate"
-          onClick={() => handleButtonClick("intermediate")}
-        >
-          intermediate level
-        </button>
-        <button
-          className={activeButton === "high" ? "active" : ""}
-          data-name="high"
-          onClick={() => handleButtonClick("high")}
-        >
-          high level
-        </button>
+        <button className={activeButton === "all" ? "active" : ""} data-name="all" onClick={() => handleButtonClick("all")}>all</button>
+        <button className={activeButton === "easy" ? "active" : ""} data-name="easy" onClick={() => handleButtonClick("easy")}>easy</button>
+        <button className={activeButton === "intermediate" ? "active" : ""} data-name="intermediate" onClick={() => handleButtonClick("intermediate")}>intermediate level</button>
+        <button className={activeButton === "high" ? "active" : ""} data-name="high" onClick={() => handleButtonClick("high")}>high level</button>
       </div>
       <div className="port-row">
         {filteredWorks.map((work) => (
