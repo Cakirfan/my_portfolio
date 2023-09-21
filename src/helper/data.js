@@ -60,16 +60,18 @@ export const portWorks = [
   },
   {
     wId: 4,
-    wName: "WordPress",
+    wName: "Task-Tracker",
     wCategory: "easy",
-    wImage: "https://img.freepik.com/freie-psd/balancieren-sie-ihre-life-yoga-class-landing-page_23-2148489815.jpg?size=626&ext=jpg&ga=GA1.1.258947574.1676464177&semt=sph",
+    wHref: "https://task-tracker-mu-sable.vercel.app/",
+    wImage: "images/Task-Tracker.gif",
     wDesc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error, in?",
   },
   {
     wId: 5,
-    wName: "WordPress",
+    wName: "Movie-App",
     wCategory: "intermediate",
-    wImage: "https://img.freepik.com/freie-psd/zielseite-fuer-urlaubsangebote_23-2148918799.jpg?size=626&ext=jpg&ga=GA1.1.258947574.1676464177&semt=sph",
+    wHref: "https://movie-app-wpwj.vercel.app/",
+    wImage: "images/Movie-App1.gif",
     wDesc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error, in?",
   },
   {
