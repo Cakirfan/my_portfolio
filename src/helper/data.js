@@ -84,10 +84,10 @@ export const portWorks = [
   },
   {
     wId: 7,
-    wName: "WordPress",
-    wCategory: "intermediate",
-    wHref: "https://country-router-app.vercel.app/",
-    wImage: "https://cdn.pixabay.com/photo/2015/01/04/17/30/wordpress-588495_640.jpg",
+    wName: "SASS-Portfolio-Project",
+    wCategory: "easy",
+    wHref: "https://sass-portfolio-project.vercel.app/",
+    wImage: "images/Sass-Portfolio-Project.gif",
     wDesc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error, in?",
   },
   {
