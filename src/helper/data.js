@@ -92,9 +92,10 @@ export const portWorks = [
   },
   {
     wId: 8,
-    wName: "WordPress",
+    wName: "Blog-App",
     wCategory: "high",
-    wImage: "https://cdn.pixabay.com/photo/2015/10/04/08/08/blog-970723_640.jpg",
+    wHref: "https://blog-app-weld-tau.vercel.app/",
+    wImage: "images/Blog-App-Screenshot.png",
     wDesc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error, in?",
   },
   {
