@@ -16,6 +16,7 @@ import { FaUser, FaBars, FaTimes } from "react-icons/fa";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [active, setActive] = useState(true);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -77,11 +78,16 @@ const Navbar = () => {
           <h1 className="header-h1">Irfan Cakir</h1>
 
           <div className="social-icons">
-          {
-            socialIcons.map((icons) => (
-            <a href={icons.href} target="_blank" rel="noreferrer" style={{ cursor: "pointer" }}>{icons.icon}</a>              
-            ))
-          }
+            {socialIcons.map((icons) => (
+              <a
+                href={icons.href}
+                target="_blank"
+                rel="noreferrer"
+                style={{ cursor: "pointer" }}
+              >
+                {icons.icon}
+              </a>
+            ))}
           </div>
         </div>
 
@@ -90,7 +96,11 @@ const Navbar = () => {
           <ul>
             {navbarItems.map((item) => (
               <li>
-                <a href={item.href} className="active a">
+                <a
+                  href={item.href}
+                  className="a"
+                  onClick={() => setActive(!active)}
+                >
                   {item.icon}
                   {item.title}
                 </a>
@@ -104,7 +114,11 @@ const Navbar = () => {
           <p>
             &copy; Copyright 2023 <br />
             Designed By
-            <a href="https://www.linkedin.com/in/irfan-cakir-/" target="_blank" rel="noreferrer">
+            <a
+              href="https://www.linkedin.com/in/irfan-cakir-/"
+              target="_blank"
+              rel="noreferrer"
+            >
               Cakirfan
             </a>
           </p>
