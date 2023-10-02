@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./ScrollBtn.css";
+import { BsCapslockFill } from "react-icons/bs";
 
 const ScrollBtn = () => {
   const [showScrollButton, setShowScrollButton] = useState(false);
@@ -33,7 +34,9 @@ const ScrollBtn = () => {
     <div
       className={`scrollTop ${showScrollButton ? "active" : ""}`}
       onClick={scrollToTop}
-    ></div>
+    >
+      <BsCapslockFill className="icon" />
+    </div>
   );
 };
 

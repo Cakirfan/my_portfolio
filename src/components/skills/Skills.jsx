@@ -6,8 +6,7 @@ const Skills = () => {
         <h1 class="sub-heading">Skills</h1>
         <div class="divider"></div>
         <p class="sub-paraf">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
-          labore odit exercitationem et obcaecati corporis!
+          Ich bemühe mich weiterhin ständig, meine Kenntnisse zu verbessern.
         </p>
 
         <div class="skill-row">

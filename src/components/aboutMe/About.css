@@ -47,10 +47,20 @@
 #about .about-col .img-col img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 
 #about .about-col .info-col {
   flex-basis: 70%;
+}
+
+#about .about-col .info-col .sub-paraf-icon {
+  color: var(--bgColor2);
+  margin-right: .5rem;
+}
+
+#about .about-col .info-col .sub-paraf p {
+  margin-bottom: .3rem;
 }
 
 #about .about-col .info-col h2 {

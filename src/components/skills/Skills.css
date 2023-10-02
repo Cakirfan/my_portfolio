@@ -1,5 +1,5 @@
 #skill {
-  padding: 70px 30px;
+  padding: 50px 30px;
 }
 
 #skill .skill-row {
@@ -7,6 +7,10 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 1.7rem;
+}
+
+#skill .sub-paraf {
+  margin-top: 1.5rem;
 }
 
 #skill .skill-row .skill-box .skill-info {
