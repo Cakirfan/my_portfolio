@@ -1,6 +1,6 @@
 export const experiences = [
   {
-    position: "JUNIOR FRONTEND DEVELOPER",
+    position: "JUNIOR FRONTEND DEVELOPER (Teamworks - Workshops)",
     time: "Dezember 2022 - Juli 2023",
     place: "Clarusway IT Training School",
     desc: [
