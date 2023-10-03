@@ -10,7 +10,6 @@ const About = () => {
       <h1 class="sub-heading">About Me</h1>
       <div class="divider"></div>
       <p>
-        {/* As an enthusiastic newcomer to the IT industry, I am aiming for a professional reorientation and am motivated to start my career in web development. My training as a frontend developer at Clarusway IT School gave me a solid foundation in the development of user-friendly and attractive web applications. I have a high willingness to learn and I am willing to continue my education to keep up with the latest technologies and trends in web development. */}
         Als begeisterter Neueinsteiger in die IT-Branche strebe ich eine
         berufliche Neuorientierung an und bin motiviert, meine Karriere in der
         Webentwicklung zu starten. Durch meine Weiterbildung zum

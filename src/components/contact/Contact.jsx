@@ -30,13 +30,15 @@ const Contact = () => {
         <h1 className="sub-heading">Contact</h1>
         <div className="divider"></div>
         <p className="sub-paraf">
-          I am always here to communicate and learn more about cooperation
-          opportunities. Working with you on projects, exchanging ideas or just
-          saying hello is important to me. You can contact me via email, phone
-          or social media. If you have any questions or suggestions, please do
-          not hesitate to share. I will get back to you as soon as possible and
-          do everything in my power to keep our communication warm and effective
-          during this time. Here is my contact information:
+          Ich bin immer für Sie da, um zu kommunizieren und mehr über
+          Kooperationsmöglichkeiten zu erfahren. Mir ist es wichtig, mit Ihnen
+          an Projekten zu arbeiten, Ideen auszutauschen oder einfach nur Hallo
+          zu sagen. Sie können mich per E-Mail, Telefon oder über soziale Medien
+          kontaktieren. Wenn Sie Fragen oder Anregungen haben, zögern Sie nicht,
+          diese mitzuteilen. Ich werde mich so schnell wie möglich bei Ihnen
+          melden und alles in meiner Macht Stehende tun, um unsere Kommunikation
+          in dieser Zeit warm und effektiv zu halten. Hier sind meine
+          Kontaktdaten:
         </p>
 
         <div className="contact-row">
@@ -62,7 +64,7 @@ const Contact = () => {
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d159868.3194697734!2d6.6495453697653595!3d51.23855399844443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b8c97bf1465907%3A0x42760fc4a2a73b0!2sD%C3%BCsseldorf!5e0!3m2!1str!2sde!4v1693940415381!5m2!1str!2sde"
                 width="100%"
-                height="250"
+                height="280"
                 style={{ border: "0px" }}
                 loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"

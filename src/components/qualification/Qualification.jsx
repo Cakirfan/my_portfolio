@@ -29,9 +29,9 @@ const Qualification = () => {
         <h1 className="sub-heading">Qualification</h1>
         <div className="divider"></div>
         <p className="sub-paraf">
-          Hello, I'm Irfan. I am looking for new opportunities to contribute by
-          using my experience and skills effectively in the field of Web
-          Development!
+          Hallo, ich bin Irfan. Ich bin auf der Suche nach neuen Möglichkeiten,
+          einen Beitrag zu leisten. Ich nutze meine Erfahrungen und Fähigkeiten
+          effektiv im Bereich Web Entwicklung!
         </p>
 
         <div className="qualification-row">

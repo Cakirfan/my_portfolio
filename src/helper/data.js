@@ -4,7 +4,7 @@ export const experiences = [
     time: "Dezember 2022 - Juli 2023",
     place: "Clarusway IT Training School",
     desc: [
-      "Get insights into project management tools and methods",
+      "Einblicke in Projektmanagement-Tools und -Methoden erhalten",
       "Analytischer Lösungen für die während des Projektprozesses aufgetretenen Probleme und Schwierigkeiten",
       "Kreative Fähigkeiten, um ansprechende Benutzeroberflächen zu gestalten und das Benutzererlebnis zu verbessern",
     ],
@@ -14,9 +14,9 @@ export const experiences = [
     time: "September 2010 - Juni 2015",
     place: "Youth Association (KÜMDER) - Kayseri",
     desc: [
-      "Friendly, professional and confident demeanor towards guests and colleagues",
-      "Fast processing of all tasks",
-      "Agree, coordinate and implement tasks with the manager",
+      "Freundliches, professionelles und sicheres Auftreten gegenüber Gästen und Kollegen",
+      "Schnelle Bearbeitung aller Aufgaben",
+      "Aufgaben mit der Führungskraft vereinbaren, koordinieren und umsetzen",
     ],
   },
   {
@@ -24,9 +24,9 @@ export const experiences = [
     time: "August 2009 - June 2010",
     place: "Private Yelkenoglu Primary School - Kayseri",
     desc: [
-        "Inclusion of the idea of inclusion and promotion of the professional, social and personal skills of each child",
-        "Close and trusting cooperation with parents, colleagues and school administration",
-        "Organization and implementation of parent talks and parents' evenings",
+      "Einbeziehung des Gedankens der Inklusion und Förderung der beruflichen, sozialen und persönlichen Kompetenzen jedes Kindes",
+      "Enge und vertrauensvolle Zusammenarbeit mit Eltern, Kollegen und Schulleitung",
+      "Organisation und Durchführung von Elterngesprächen und Elternabenden",
     ],
   },
 ];
