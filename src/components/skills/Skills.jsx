@@ -61,7 +61,7 @@ const Skills = () => {
               <h2>20%</h2>
             </div>
             <div class="skill-outter-line">
-              <div class="skill-inner-line" style={{ width: "50%" }}></div>
+              <div class="skill-inner-line" style={{ width: "20%" }}></div>
             </div>
           </div>
         </div>

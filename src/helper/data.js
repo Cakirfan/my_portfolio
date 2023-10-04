@@ -1,3 +1,4 @@
+//? =================== QUALIFICATIONS SECTION =================== //
 export const experiences = [
   {
     position: "JUNIOR FRONTEND DEVELOPER (Teamworks - Workshops)",
@@ -33,6 +34,7 @@ export const experiences = [
 
 
 
+//? =================== PORTFOLIO SECTION =================== //
 export const portWorks = [
   {
     wId: 1,
@@ -100,7 +102,7 @@ export const portWorks = [
   },
   {
     wId: 9,
-    wName: "WordPress",
+    wName: "Coming Soon...",
     wCategory: "intermediate",
     wImage: "https://cdn.pixabay.com/photo/2016/06/02/09/05/social-media-1430527_640.jpg",
     wDesc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error, in?",
@@ -108,6 +110,8 @@ export const portWorks = [
 ];
 
 
+
+//? =================== SERVICES SECTION =================== //
 export const services = [
   {
     sId: 1,
